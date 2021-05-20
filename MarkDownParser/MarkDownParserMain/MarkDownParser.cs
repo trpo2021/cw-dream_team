@@ -15,6 +15,7 @@ namespace MarkDownParser
             result = parseUnorderedList(result);
             result = parseOrderedList(result);
             result = parseOrderedListEscape(result);
+            result = parseLinks(result);
             result = escapeBreakline(result);
             return "<html><body>" + result + "</body></html>";
         }
@@ -97,6 +98,14 @@ namespace MarkDownParser
         private static String parseHorizontalRules(String markDownText)
         {
             return Regex.Replace(markDownText, "(?:(?:\\*|-) *){3,}", "<hr />");
+        }
+
+        private static String parseLinks(String markDownText)
+        {
+            string result = markDownText;
+            result = Regex.Replace(result, "\\[(.+)\\]\\((.+)(?: (\\\".+\\\"))\\)", "<a href=\"$2\" title=$3>$1</a>");
+            result = Regex.Replace(result, "\\[(.+)\\]\\((.+)\\)", "<a href=\"$2\">$1</a>");
+            return result;
         }
     }
 }

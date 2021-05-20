@@ -10,6 +10,7 @@ namespace MarkDownParser
             string result = markDownText;
             result = escapeSpecialSymbols(result);
             result = parseHeaders(result);
+            result = parseBlockquote(result);
             return "<html><body>" + result + "</body></html>";
         }
 
@@ -25,6 +26,7 @@ namespace MarkDownParser
             string result = markDownText;
             result = parseSharpsHeaders(result);
             result = parseUnderlineHeaders(result);
+            result = parseBlockquote(result);
             return result;
         }
 
@@ -44,6 +46,14 @@ namespace MarkDownParser
             string result = markDownText;
             result = Regex.Replace(result, "^(.+)\\n=+$", "<h1>$1</h1>", RegexOptions.Multiline);
             result = Regex.Replace(result, "^(.+)\\n-+$", "<h2>$1</h2>", RegexOptions.Multiline);
+            return result;
+        }
+
+        private static String parseBlockquote(String markDownText)
+        {
+            string result = markDownText;
+            result = Regex.Replace(result, ">\\s(.+)$", "<blockquote>$1</blockquote>", RegexOptions.Multiline);
+            result = result.Replace("</blockquote>\n<blockquote>", "\n");
             return result;
         }
     }

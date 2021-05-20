@@ -1,9 +1,0 @@
-../server/bin/Debug/netcoreapp3.1/HTTP-Server.deps.json
-../server/bin/Debug/netcoreapp3.1/HTTP-Server.dll
-../server/bin/Debug/netcoreapp3.1/HTTP-Server.pdb
-../server/obj/Debug/netcoreapp3.1/HTTP-Server.csprojAssemblyReference.cache
-../server/obj/Debug/netcoreapp3.1/HTTP-Server.AssemblyInfoInputs.cache
-../server/obj/Debug/netcoreapp3.1/HTTP-Server.AssemblyInfo.cs
-../server/obj/Debug/netcoreapp3.1/HTTP-Server.csproj.CoreCompileInputs.cache
-../server/obj/Debug/netcoreapp3.1/HTTP-Server.dll
-../server/obj/Debug/netcoreapp3.1/HTTP-Server.pdb

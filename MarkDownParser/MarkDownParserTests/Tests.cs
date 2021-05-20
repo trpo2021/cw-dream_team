@@ -76,5 +76,13 @@ namespace MarkDownParserTests
             Assert.Equal("<html><body><ul><li>Some</li><li>List</li><li>Here</li></ul><br>" + 
                 "<ul><li>Another</li><li>List</li></ul></body></html>", result);
         }
+
+        [Fact]
+        public void OrderedListTest()
+        {
+            string result = parse("1. Some\n2. Ordered\n3. List\n\n3. List\n2. Too");
+            Assert.Equal("<html><body><ol><li>Some</li><li>Ordered</li><li>List</li></ol><br>" +
+                "<ol><li>List</li><li>Too</li></ol></body></html>", result);
+        }
     }
 }

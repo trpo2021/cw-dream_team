@@ -11,6 +11,7 @@ namespace MarkDownParser
             result = escapeSpecialSymbols(result);
             result = parseHeaders(result);
             result = parseBlockquote(result);
+            result = parseHorizontalRules(result);
             result = parseUnorderedList(result);
             result = parseOrderedList(result);
             result = parseOrderedListEscape(result);
@@ -91,6 +92,11 @@ namespace MarkDownParser
         private static String parseOrderedListEscape(String markDownText)
         {
             return Regex.Replace(markDownText, "(\\d+)\\\\\\.", "$1.");
+        }
+
+        private static String parseHorizontalRules(String markDownText)
+        {
+            return Regex.Replace(markDownText, "(?:(?:\\*|-) *){3,}", "<hr />");
         }
     }
 }

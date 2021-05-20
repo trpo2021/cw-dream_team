@@ -6,7 +6,7 @@ namespace MarkDownParser
     {
         public static String parse(String markDownText)
         {
-            return "<html>" + markDownText + "</html>";
+            return "<html><body>" + markDownText + "</body></html>";
         }
     }
 }

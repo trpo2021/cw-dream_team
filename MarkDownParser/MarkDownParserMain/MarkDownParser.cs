@@ -52,8 +52,15 @@ namespace MarkDownParser
         private static String parseBlockquote(String markDownText)
         {
             string result = markDownText;
-            result = Regex.Replace(result, ">\\s(.+)$", "<blockquote>$1</blockquote>", RegexOptions.Multiline);
-            result = result.Replace("</blockquote>\n<blockquote>", "\n");
+            string newResult = "";
+            while(newResult != result)
+            {
+                if (newResult != "") result = newResult;
+                newResult = Regex.Replace(result, "> (.+)$", "<blockquote>$1</blockquote>", RegexOptions.Multiline);
+                newResult = newResult.Replace("</blockquote>\n<blockquote>", "\n");
+            }
+            newResult = newResult.Replace("</blockquote>\n", "</blockquote>");
+            result = newResult;
             return result;
         }
 

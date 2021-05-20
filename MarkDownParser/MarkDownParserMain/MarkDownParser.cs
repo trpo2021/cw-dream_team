@@ -11,6 +11,7 @@ namespace MarkDownParser
             result = escapeSpecialSymbols(result);
             result = parseHeaders(result);
             result = parseBlockquote(result);
+            result = parseUnorderedList(result);
             result = escapeBreakline(result);
             return "<html><body>" + result + "</body></html>";
         }
@@ -53,7 +54,7 @@ namespace MarkDownParser
         {
             string result = markDownText;
             string newResult = "";
-            while(newResult != result)
+            while (newResult != result)
             {
                 if (newResult != "") result = newResult;
                 newResult = Regex.Replace(result, "> (.+)$", "<blockquote>$1</blockquote>", RegexOptions.Multiline);
@@ -67,6 +68,14 @@ namespace MarkDownParser
         private static String escapeBreakline(String markDownText)
         {
             return markDownText.Replace("\n", "<br>");
+        }
+
+        private static String parseUnorderedList(String markDownText)
+        {
+            string result = Regex.Replace(markDownText, "(?:\\+|\\*|-)\\s(.+)$", "<li>$1</li>", RegexOptions.Multiline);
+            result = Regex.Replace(result, "((?:<li>.+</li>\n?)+)", "<ul>$1</ul>");
+            result = result.Replace("</li>\n", "</li>");
+            return result;
         }
     }
 }

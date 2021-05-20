@@ -68,5 +68,13 @@ namespace MarkDownParserTests
             Assert.Equal("<html><body><blockquote>Some quote<br><blockquote>This is inner quote</blockquote>" +
                 "This is not</blockquote></body></html>", result);
         }
+
+        [Fact]
+        public void UnorderedListTest()
+        {
+            string result = parse("* Some\n* List\n* Here\n\n+ Another\n+ List");
+            Assert.Equal("<html><body><ul><li>Some</li><li>List</li><li>Here</li></ul><br>" + 
+                "<ul><li>Another</li><li>List</li></ul></body></html>", result);
+        }
     }
 }

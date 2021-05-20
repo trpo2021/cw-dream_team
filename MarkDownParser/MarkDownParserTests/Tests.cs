@@ -91,5 +91,15 @@ namespace MarkDownParserTests
             string result = parse("1984\\. Book of life");
             Assert.Equal("<html><body>1984. Book of life</body></html>", result);
         }
+
+        [Fact]
+        public void HorizontalRulesTest()
+        {
+            Assert.Equal("<html><body><hr /></body></html>", parse("* * *"));
+            Assert.Equal("<html><body><hr /></body></html>", parse("***"));
+            Assert.Equal("<html><body><hr /></body></html>", parse("*****"));
+            Assert.Equal("<html><body><hr /></body></html>", parse("- - -"));
+            Assert.Equal("<html><body><hr /></body></html>", parse("---------------------------------------"));
+        }
     }
 }

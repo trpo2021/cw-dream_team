@@ -112,5 +112,13 @@ namespace MarkDownParserTests
             Assert.Equal("<html><body><a href=\"http://example.net/\">This link</a>" +
                 " has no title attribute.</body></html>", result);
         }
+
+        [Fact]
+        public void TextModificationsTest()
+        {
+            Assert.Equal("<html><body><strong>abc</strong></body></html>", parse("**abc**"));
+            Assert.Equal("<html><body><em>abc</em></body></html>", parse("_abc_"));
+            Assert.Equal("<html><body><strike>abc</strike></body></html>", parse("~~abc~~"));
+        }
     }
 }

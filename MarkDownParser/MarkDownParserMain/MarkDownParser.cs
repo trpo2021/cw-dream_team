@@ -13,14 +13,22 @@ namespace MarkDownParser
             return "<html><body>" + result + "</body></html>";
         }
 
-        public static String escapeSpecialSymbols(String markDownText)
+        private static String escapeSpecialSymbols(String markDownText)
         {
             return markDownText
                  .Replace("&", "&amp;")
                  .Replace("<", "&lt;");
         }
 
-        public static String parseHeaders(String markDownText)
+        private static String parseHeaders(String markDownText)
+        {
+            string result = markDownText;
+            result = parseSharpsHeaders(result);
+            result = parseUnderlineHeaders(result);
+            return result;
+        }
+
+        private static String parseSharpsHeaders(String markDownText)
         {
             string result = markDownText;
             for (int i = 1; i <= 6; i++)
@@ -28,6 +36,14 @@ namespace MarkDownParser
                 string pattern = "^#{" + i + "}\\s(.+(?<!\\s#{" + i + "}))(?:\\s#{" + i + "})?$";
                 result = Regex.Replace(result, pattern, "<h" + i + ">$1</h" + i + ">", RegexOptions.Multiline);
             }
+            return result;
+        }
+
+        private static String parseUnderlineHeaders(String markDownText)
+        {
+            string result = markDownText;
+            result = Regex.Replace(result, "^(.+)\\n=+$", "<h1>$1</h1>", RegexOptions.Multiline);
+            result = Regex.Replace(result, "^(.+)\\n-+$", "<h2>$1</h2>", RegexOptions.Multiline);
             return result;
         }
     }

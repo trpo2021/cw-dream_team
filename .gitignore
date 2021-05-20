@@ -4,8 +4,12 @@
 *.assets.cache
 *.cache
 *.csproj.CoreCompileInputs.cache
-*.csproj.FileListAbsolute
+*.csproj.FileListAbsolute.txt
 *.csprojAssemblyReference.cache
 *.pdb
 *.dll
 *.csproj
+*.csproj.nuget.dgspec.json
+*.csproj.nuget.g.props
+*.csproj.nuget.g.targets
+*.assets.json

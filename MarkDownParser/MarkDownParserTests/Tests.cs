@@ -111,6 +111,8 @@ namespace MarkDownParserTests
             result = parse("[This link](http://example.net/) has no title attribute.");
             Assert.Equal("<html><body><a href=\"http://example.net/\">This link</a>" +
                 " has no title attribute.</body></html>", result);
+            result = parse("<http://example.com/>");
+            Assert.Equal("<html><body><a href=\"http://example.com/\">http://example.com/</a></body></html>", result);
         }
 
         [Fact]

@@ -6,7 +6,15 @@ namespace MarkDownParser
     {
         public static String parse(String markDownText)
         {
-            return "<html><body>" + markDownText + "</body></html>";
+            string result = escapeSpecialSymbols(markDownText);
+            return "<html><body>" + result + "</body></html>";
+        }
+
+        public static String escapeSpecialSymbols(String markDownText)
+        {
+            return markDownText
+                 .Replace("&", "&amp;")
+                 .Replace("<", "&lt;");
         }
     }
 }

@@ -12,6 +12,7 @@ namespace MarkDownParser
             result = parseHeaders(result);
             result = parseBlockquote(result);
             result = parseUnorderedList(result);
+            result = parseOrderedList(result);
             result = escapeBreakline(result);
             return "<html><body>" + result + "</body></html>";
         }
@@ -73,7 +74,15 @@ namespace MarkDownParser
         private static String parseUnorderedList(String markDownText)
         {
             string result = Regex.Replace(markDownText, "(?:\\+|\\*|-)\\s(.+)$", "<li>$1</li>", RegexOptions.Multiline);
-            result = Regex.Replace(result, "((?:<li>.+</li>\n?)+)", "<ul>$1</ul>");
+            result = Regex.Replace(result, "((?:^<li>.+</li>\n?)+)", "<ul>$1</ul>", RegexOptions.Multiline);
+            result = result.Replace("</li>\n", "</li>");
+            return result;
+        }
+
+        private static String parseOrderedList(String markDownText)
+        {
+            string result = Regex.Replace(markDownText, "\\d+\\.\\s(.+)$", "<li>$1</li>", RegexOptions.Multiline);
+            result = Regex.Replace(result, "((?:^<li>.+</li>\n?)+)", "<ol>$1</ol>", RegexOptions.Multiline);
             result = result.Replace("</li>\n", "</li>");
             return result;
         }

@@ -31,7 +31,7 @@ namespace MarkDownParserTests
             Assert.Equal("<html><body>2 &lt; 5</body></html>", result);
         }
         [Fact]
-        public void HeadersTest()
+        public void SharpsHeadersTest()
         {
             for (int i = 1; i <= 6; i++)
             {
@@ -42,6 +42,15 @@ namespace MarkDownParserTests
                 result = parse(sharps + " Some text " + sharps);
                 Assert.Equal("<html><body><h" + i + ">Some text</h" + i + "></body></html>", result);
             }
+        }
+
+        [Fact]
+        public void UnderlineHeadersTest()
+        {
+            string result = parse("Some text\n=========");
+            Assert.Equal("<html><body><h1>Some text</h1></body></html>", result);
+            result = parse("Some text\n---------");
+            Assert.Equal("<html><body><h2>Some text</h2></body></html>", result);
         }
     }
 }

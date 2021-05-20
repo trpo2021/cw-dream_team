@@ -16,6 +16,7 @@ namespace MarkDownParser
             result = parseOrderedList(result);
             result = parseOrderedListEscape(result);
             result = parseLinks(result);
+            result = parseTextModificators(result);
             result = escapeBreakline(result);
             return "<html><body>" + result + "</body></html>";
         }
@@ -105,6 +106,15 @@ namespace MarkDownParser
             string result = markDownText;
             result = Regex.Replace(result, "\\[(.+)\\]\\((.+)(?: (\\\".+\\\"))\\)", "<a href=\"$2\" title=$3>$1</a>");
             result = Regex.Replace(result, "\\[(.+)\\]\\((.+)\\)", "<a href=\"$2\">$1</a>");
+            return result;
+        }
+
+        private static String parseTextModificators(String markDownText)
+        {
+            string result = markDownText;
+            result = Regex.Replace(result, "\\*\\*(.+)\\*\\*", "<strong>$1</strong>");
+            result = Regex.Replace(result, "_(.+)_", "<em>$1</em>");
+            result = Regex.Replace(result, "~~(.+)~~", "<strike>$1</strike>");
             return result;
         }
     }

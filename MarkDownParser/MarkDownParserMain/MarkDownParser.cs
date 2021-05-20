@@ -107,6 +107,7 @@ namespace MarkDownParser
             string result = markDownText;
             result = Regex.Replace(result, "\\[(.+)\\]\\((.+)(?: (\\\".+\\\"))\\)", "<a href=\"$2\" title=$3>$1</a>");
             result = Regex.Replace(result, "\\[(.+)\\]\\((.+)\\)", "<a href=\"$2\">$1</a>");
+            result = Regex.Replace(result, "&lt;((?:https?:/)?/[\\w./]*/)>", "<a href=\"$1\">$1</a>");
             return result;
         }
 

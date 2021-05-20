@@ -1,0 +1,10 @@
+*.nuget.cache
+*.sln
+*.AssemblyInfoInputs.cache
+*.assets.cache
+*.cache
+*.csproj.CoreCompileInputs.cache
+*.csproj.FileListAbsolute
+*.csprojAssemblyReference.cache
+*.pdb
+*.dll

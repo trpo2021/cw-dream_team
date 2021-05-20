@@ -101,5 +101,16 @@ namespace MarkDownParserTests
             Assert.Equal("<html><body><hr /></body></html>", parse("- - -"));
             Assert.Equal("<html><body><hr /></body></html>", parse("---------------------------------------"));
         }
+
+        [Fact]
+        public void LinksTest()
+        {
+            string result = parse("This is [an example](http://example.com/ \"Title\") inline link.");
+            Assert.Equal("<html><body>This is <a href=\"http://example.com/\" title=\"Title\">" +
+                "an example</a> inline link.</body></html>", result);
+            result = parse("[This link](http://example.net/) has no title attribute.");
+            Assert.Equal("<html><body><a href=\"http://example.net/\">This link</a>" +
+                " has no title attribute.</body></html>", result);
+        }
     }
 }

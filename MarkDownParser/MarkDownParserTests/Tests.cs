@@ -73,7 +73,7 @@ namespace MarkDownParserTests
         public void UnorderedListTest()
         {
             string result = parse("* Some\n* List\n* Here\n\n+ Another\n+ List");
-            Assert.Equal("<html><body><ul><li>Some</li><li>List</li><li>Here</li></ul><br>" + 
+            Assert.Equal("<html><body><ul><li>Some</li><li>List</li><li>Here</li></ul><br>" +
                 "<ul><li>Another</li><li>List</li></ul></body></html>", result);
         }
 
@@ -119,6 +119,16 @@ namespace MarkDownParserTests
             Assert.Equal("<html><body><strong>abc</strong></body></html>", parse("**abc**"));
             Assert.Equal("<html><body><em>abc</em></body></html>", parse("_abc_"));
             Assert.Equal("<html><body><strike>abc</strike></body></html>", parse("~~abc~~"));
+        }
+
+        [Fact]
+        public void ImagesTest()
+        {
+            string result = parse("![Alt text](/path/to/img.jpg)");
+            Assert.Equal("<html><body><img src=\"/path/to/img.jpg\" alt=\"Alt text\" /></body></html>", result);
+            result = parse("![Alt text](/path/to/img.jpg \"Optional title\")");
+            Assert.Equal("<html><body><img src=\"/path/to/img.jpg\" alt=\"Alt text\" " + 
+                "title=\"Optional title\" /></body></html>", result);
         }
     }
 }

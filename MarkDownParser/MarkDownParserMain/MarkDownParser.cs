@@ -15,6 +15,7 @@ namespace MarkDownParser
             result = parseUnorderedList(result);
             result = parseOrderedList(result);
             result = parseOrderedListEscape(result);
+            result = parseImages(result);
             result = parseLinks(result);
             result = parseTextModificators(result);
             result = escapeBreakline(result);
@@ -115,6 +116,16 @@ namespace MarkDownParser
             result = Regex.Replace(result, "\\*\\*(.+)\\*\\*", "<strong>$1</strong>");
             result = Regex.Replace(result, "_(.+)_", "<em>$1</em>");
             result = Regex.Replace(result, "~~(.+)~~", "<strike>$1</strike>");
+            return result;
+        }
+
+        private static String parseImages(String markDownText)
+        {
+            string result = markDownText;
+            result = Regex.Replace(result, "!\\[(.+)\\]\\((.+) \\\"(.+)\\\"\\)", 
+                "<img src=\"$2\" alt=\"$1\" title=\"$3\" />");
+            result = Regex.Replace(result, "!\\[(.+)\\]\\((.+)\\)",
+                "<img src=\"$2\" alt=\"$1\" />");
             return result;
         }
     }

@@ -57,8 +57,8 @@ namespace MarkDownParserTests
         public void BlockquoteTest()
         {
             string result = parse("> Some quote\n> This is same quote\n\n> This is other");
-            Assert.Equal("<html><body><blockquote>Some quote\nThis is same quote</blockquote>" +
-                "\n\n<blockquote>This is other</blockquote></body></html>", result);
+            Assert.Equal("<html><body><blockquote>Some quote<br>This is same quote</blockquote>" +
+                "<br><br><blockquote>This is other</blockquote></body></html>", result);
         }
     }
 }

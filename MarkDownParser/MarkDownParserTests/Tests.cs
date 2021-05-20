@@ -30,5 +30,18 @@ namespace MarkDownParserTests
             String result = parse("2 < 5");
             Assert.Equal("<html><body>2 &lt; 5</body></html>", result);
         }
+        [Fact]
+        public void HeadersTest()
+        {
+            for (int i = 1; i <= 6; i++)
+            {
+                string sharps = "";
+                for (int j = 0; j < i; j++) sharps += "#";
+                String result = parse(sharps + " Some text");
+                Assert.Equal("<html><body><h" + i + ">Some text</h" + i + "></body></html>", result);
+                result = parse(sharps + " Some text " + sharps);
+                Assert.Equal("<html><body><h" + i + ">Some text</h" + i + "></body></html>", result);
+            }
+        }
     }
 }

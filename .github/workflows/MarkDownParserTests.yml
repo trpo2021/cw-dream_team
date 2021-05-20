@@ -21,4 +21,4 @@ jobs:
       - name: Build
         run: dotnet build --configuration Release --no-restore ./MarkDownParser/
       - name: Test
-        run: dotnet test --no-restore --verbosity=norm ./MarkDownParser/
+        run: dotnet test --no-restore --verbosity norm ./MarkDownParser/

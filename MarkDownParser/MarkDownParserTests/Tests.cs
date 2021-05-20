@@ -84,5 +84,12 @@ namespace MarkDownParserTests
             Assert.Equal("<html><body><ol><li>Some</li><li>Ordered</li><li>List</li></ol><br>" +
                 "<ol><li>List</li><li>Too</li></ol></body></html>", result);
         }
+
+        [Fact]
+        public void OrderedListEscapeTest()
+        {
+            string result = parse("1984\\. Book of life");
+            Assert.Equal("<html><body>1984. Book of life</body></html>", result);
+        }
     }
 }

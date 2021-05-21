@@ -41,7 +41,7 @@ namespace ToDocumentTests
         [Fact]
         public void TestOfDataInDocumentMultipleTimes()
         {
-            string pathToFile = "TestOfDataInDocumentMultipleTimess.html";
+            string pathToFile = "TestOfDataInDocumentMultipleTime.html";
 
             string data = "<p>Hello World!</p>";
 

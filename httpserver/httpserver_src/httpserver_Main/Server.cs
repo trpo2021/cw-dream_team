@@ -56,7 +56,7 @@ namespace httpserver
 
             if (thread != null)
             {
-                thread.Abort();
+                thread.Interrupt();
             }
         }
 

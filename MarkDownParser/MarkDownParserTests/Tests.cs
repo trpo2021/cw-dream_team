@@ -6,6 +6,20 @@ namespace MarkDownParserTests
 {
     public class Tests
     {
+        public string parse(string markdown)
+        {
+            string result = MarkDownParser.MarkDownParser.parse(markdown, "abc");
+            result = result.Replace("<head><title>abc</title></head>", "");
+            return result;
+        }
+
+        [Fact]
+        public void HeaderTest()
+        {
+            string result = MarkDownParser.MarkDownParser.parse("", "abcd");
+            Assert.Equal("<html><head><title>abcd</title></head><body></body></html>", result);
+        }
+
         [Fact]
         public void BasicHTMLTest()
         {

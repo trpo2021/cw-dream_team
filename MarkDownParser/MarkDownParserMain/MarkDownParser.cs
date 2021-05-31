@@ -5,7 +5,7 @@ namespace MarkDownParser
 {
     public class MarkDownParser
     {
-        public static String parse(String markDownText)
+        public static String parse(String markDownText, string siteName)
         {
             string result = markDownText;
             result = escapeSpecialSymbols(result);
@@ -19,7 +19,7 @@ namespace MarkDownParser
             result = parseLinks(result);
             result = parseTextModificators(result);
             result = escapeBreakline(result);
-            return "<html><body>" + result + "</body></html>";
+            return "<html><head><title>" + siteName + "</title></head><body>" + result + "</body></html>";
         }
 
         private static String escapeSpecialSymbols(String markDownText)

@@ -9,16 +9,19 @@ namespace _mFile
 
         public void SetData(string _fileName)
         {
-            StreamReader _rFile;
-            try
+            if (File.Exists(_fileName))
             {
-                _rFile = new StreamReader(_fileName);
-                Data += _rFile.ReadToEnd();
-                _rFile.Close();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Error: " + e);
+                StreamReader _rFile;
+                try
+                {
+                    _rFile = new StreamReader(_fileName);
+                    Data += _rFile.ReadToEnd();
+                    _rFile.Close();
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Error: " + e);
+                }
             }
         }
 

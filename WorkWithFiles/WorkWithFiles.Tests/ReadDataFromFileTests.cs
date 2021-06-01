@@ -2,6 +2,7 @@
 using System;
 using System.IO;
 using System.Threading.Tasks;
+using _mFile;
 
 namespace _mFileTests
 {
@@ -33,9 +34,9 @@ namespace _mFileTests
                 string _curData = "";
                 try
                 {
-                    StreamReader _tObj = new StreamReader(_tPath);
-                    _curData += _tObj.ReadToEnd();
-                    _tObj.Close();
+                    var _tObj = new ReadDataFromFile();
+                    _tObj.SetData(_tPath);
+                    _curData += _tObj.GetData();
                     File.Delete(_tPath);
                     Assert.Equal(_expData, _curData);
                 }

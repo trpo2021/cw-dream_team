@@ -17,8 +17,8 @@ jobs:
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
       - name: Install dependencies
-        run: dotnet restore ./WorkWithFiles/
+        run: dotnet restore ./SetupWorkingDirectory/
       - name: Build
-        run: dotnet build --configuration Release --no-restore ./WorkWithFiles/
+        run: dotnet build --configuration Release --no-restore ./SetupWorkingDirectory/
       - name: Test
-        run: dotnet test --no-restore --verbosity normal ./WorkWithFiles/
+        run: dotnet test --no-restore --verbosity normal ./SetupWorkingDirectory/

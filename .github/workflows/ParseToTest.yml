@@ -17,8 +17,8 @@ jobs:
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
       - name: Install dependencies
-        run: dotnet restore ./ToDocument/
+        run: dotnet restore ./ParseTo/
       - name: Build
-        run: dotnet build --configuration Release --no-restore ./ToDocument/
+        run: dotnet build --configuration Release --no-restore ./ParseTo/
       - name: Test
-        run: dotnet test --no-restore --verbosity normal ./ToDocument/
+        run: dotnet test --no-restore --verbosity normal ./ParseTo/

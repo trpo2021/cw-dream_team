@@ -1,9 +1,9 @@
 ﻿using System;
 using System.IO;
 
-namespace jekyll
+namespace _mFile
 {
-    public class ToDocument
+    public class ParseTo
     {
         public string Data;
         public string NameFile; // включая расширение файла (заменить .txt на .html)
@@ -30,13 +30,13 @@ namespace jekyll
             }
         }
 
-        public ToDocument(string data, string path)
+        public ParseTo(string data, string path)
         {
             Data = data;
             NameFile = path;
         }
 
-        ~ToDocument()
+        ~ParseTo()
         {
             Data = null;
             NameFile = null;

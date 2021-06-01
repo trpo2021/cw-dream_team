@@ -1,5 +1,5 @@
 using Xunit;
-using Files;
+using _mFile;
 using System.Threading.Tasks;
 using System.IO;
 
@@ -10,7 +10,7 @@ namespace FilesTest
         [Fact]
         public void IsRightSettupingDir()
         {
-            var _tObj = new WorkWithFiles();
+            var _tObj = new SetupDir();
             const string _tPages = "pages";
             const string _tApp = "app";
             const string _tCfg = "config.yml";
@@ -47,7 +47,7 @@ namespace FilesTest
         [Fact]
         public void IsRightStatusFromFunction_IsSettupedDir()
         {
-            var _tObj = new WorkWithFiles();
+            var _tObj = new SetupDir();
             const string _tPages = "pages";
             const string _tApp = "app";
             const string _tCfg = "config.yml";

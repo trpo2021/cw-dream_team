@@ -1,19 +1,22 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
-using System.Collections.Generic;
 
-namespace App
+namespace _mFile
 {
-    public class app
+    public class SetupDir
     {
         private static string _configFileName = "config.yml";
+        private static string _pagesDirName = "pages";
+        private static string _appDirName = "app";
         public static string _currentDirectory;
-        static app()
+
+        public SetupDir()
         {
             _currentDirectory = Directory.GetCurrentDirectory();
         }
-        private static bool IsWorkingDirectory()
+
+        public bool IsWorkingDirectory()
         {
             if (Directory.GetFiles(_currentDirectory).Contains(_configFileName) && Directory.GetDirectories(_currentDirectory).Contains("pages") && Directory.GetDirectories(_currentDirectory).Contains("app"))
             {
@@ -21,13 +24,14 @@ namespace App
             }
             return false;
         }
-        public static DirectoryInfo SetupWorkingDirectory()
+
+        public DirectoryInfo SetupWorkingDirectory()
         {
             if (!IsWorkingDirectory())
             {
                 File.Create(_configFileName);
-                Directory.CreateDirectory("pages");
-                Directory.CreateDirectory("app");
+                Directory.CreateDirectory(_pagesDirName);
+                Directory.CreateDirectory(_appDirName);
                 //здесь можно провести дополнительную конфигураци
             }
             return new DirectoryInfo(_currentDirectory);

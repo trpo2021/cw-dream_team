@@ -1,7 +1,7 @@
 using System;
 using System.IO;
 using Xunit;
-using jekyll;
+using _mFile;
 
 namespace ToDocumentTests
 {
@@ -13,7 +13,7 @@ namespace ToDocumentTests
             string pathToFile = "TestOfDataInDocument.html";
             string data = "<p>Hello World!</p>";
 
-            ToDocument buffer = new ToDocument(data, pathToFile);
+            ParseTo buffer = new ParseTo(data, pathToFile);
             buffer.ToHTMLFile();
 
             string buf = "";
@@ -45,7 +45,7 @@ namespace ToDocumentTests
 
             string data = "<p>Hello World!</p>";
 
-            ToDocument buffer = new ToDocument(data, pathToFile);
+            ParseTo buffer = new ParseTo(data, pathToFile);
             buffer.ToHTMLFile();
 
             buffer.ToHTMLFile();

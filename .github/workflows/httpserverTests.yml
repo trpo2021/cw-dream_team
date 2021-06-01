@@ -17,8 +17,8 @@ jobs:
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
       - name: Install dependencies
-        run: dotnet restore ./httpserver/
+        run: dotnet restore ./Server/
       - name: Build
-        run: dotnet build --configuration Release --no-restore ./httpserver/
+        run: dotnet build --configuration Release --no-restore ./Server/
       - name: Test
-        run: dotnet test --no-restore --verbosity normal ./httpserver/
+        run: dotnet test --no-restore --verbosity normal ./Server/

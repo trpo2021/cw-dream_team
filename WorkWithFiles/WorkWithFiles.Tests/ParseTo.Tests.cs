@@ -3,7 +3,7 @@ using System.IO;
 using Xunit;
 using _mFile;
 
-namespace ToDocumentTests
+namespace _mFileTests
 {
     public class ToDocumentTest
     {

@@ -3,7 +3,7 @@ using _mFile;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace FilesTest
+namespace _mFileTests
 {
     public class WorkWithFilesTest
     {

@@ -1,4 +1,4 @@
-name: SetUpDirTest
+name: WorkingWithFiles Tests
 
 on: [push]
 
@@ -17,8 +17,8 @@ jobs:
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
       - name: Install dependencies
-        run: dotnet restore ./SetupWorkingDirectory/
+        run: dotnet restore ./WorkWithFiles/
       - name: Build
-        run: dotnet build --configuration Release --no-restore ./SetupWorkingDirectory/
+        run: dotnet build --configuration Release --no-restore ./WorkWithFiles/
       - name: Test
-        run: dotnet test --no-restore --verbosity normal ./SetupWorkingDirectory/
+        run: dotnet test --no-restore --verbosity normal ./WorkWithFiles/

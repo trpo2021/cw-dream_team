@@ -63,136 +63,190 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include=".gitignore" />
-    <Content Include="MarkDownParser\.gitignore" />
-    <Content Include="MarkDownParser\MarkDownParser.sln" />
-    <Content Include="MarkDownParser\MarkDownParserMain\.gitignore" />
-    <Content Include="MarkDownParser\MarkDownParserTests\.gitignore" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\dotnet_library_license.txt" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\lib\net463\System.Text.RegularExpressions.dll" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\lib\netcore50\System.Text.RegularExpressions.dll" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\lib\netstandard1.6\System.Text.RegularExpressions.dll" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\net463\System.Text.RegularExpressions.dll" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netcore50\de\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netcore50\es\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netcore50\fr\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netcore50\it\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netcore50\ja\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netcore50\ko\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netcore50\ru\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netcore50\System.Text.RegularExpressions.dll" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netcore50\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netcore50\zh-hans\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netcore50\zh-hant\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netcoreapp1.1\System.Text.RegularExpressions.dll" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.0\de\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.0\es\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.0\fr\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.0\it\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.0\ja\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.0\ko\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.0\ru\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.0\System.Text.RegularExpressions.dll" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.0\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.0\zh-hans\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.0\zh-hant\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.3\de\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.3\es\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.3\fr\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.3\it\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.3\ja\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.3\ko\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.3\ru\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.3\System.Text.RegularExpressions.dll" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.3\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.3\zh-hans\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.3\zh-hant\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.6\de\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.6\es\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.6\fr\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.6\it\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.6\ja\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.6\ko\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.6\ru\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.6\System.Text.RegularExpressions.dll" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.6\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.6\zh-hans\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.6\zh-hant\System.Text.RegularExpressions.xml" />
-    <Content Include="packages\System.Text.RegularExpressions.4.3.1\ThirdPartyNotices.txt" />
-    <Content Include="packages\xunit.abstractions.2.0.3\lib\net35\xunit.abstractions.dll" />
-    <Content Include="packages\xunit.abstractions.2.0.3\lib\net35\xunit.abstractions.xml" />
-    <Content Include="packages\xunit.abstractions.2.0.3\lib\netstandard1.0\xunit.abstractions.dll" />
-    <Content Include="packages\xunit.abstractions.2.0.3\lib\netstandard1.0\xunit.abstractions.xml" />
-    <Content Include="packages\xunit.abstractions.2.0.3\lib\netstandard2.0\xunit.abstractions.dll" />
-    <Content Include="packages\xunit.abstractions.2.0.3\lib\netstandard2.0\xunit.abstractions.xml" />
-    <Content Include="packages\xunit.assert.2.4.1\lib\netstandard1.1\xunit.assert.dll" />
-    <Content Include="packages\xunit.assert.2.4.1\lib\netstandard1.1\xunit.assert.xml" />
-    <Content Include="packages\xunit.extensibility.core.2.4.1\lib\net452\xunit.core.dll" />
-    <Content Include="packages\xunit.extensibility.core.2.4.1\lib\net452\xunit.core.xml" />
-    <Content Include="packages\xunit.extensibility.core.2.4.1\lib\net452\xunit.runner.tdnet.dll" />
-    <Content Include="packages\xunit.extensibility.core.2.4.1\lib\net452\xunit.runner.utility.net452.dll" />
-    <Content Include="packages\xunit.extensibility.core.2.4.1\lib\netstandard1.1\xunit.core.dll" />
-    <Content Include="packages\xunit.extensibility.core.2.4.1\lib\netstandard1.1\xunit.core.xml" />
-    <Content Include="Server\.gitignore" />
-    <Content Include="Server\httpserver.sln" />
-    <Content Include="WorkWithFiles\.gitignore" />
-    <Content Include="WorkWithFiles\WorkWithFiles.sln" />
+    <Content Include="../.gitignore" />
+    <Content Include="../MarkDownParser\.gitignore" />
+    <Content Include="../MarkDownParser\MarkDownParser.sln" />
+    <Content Include="../MarkDownParser\MarkDownParserMain\.gitignore" />
+    <Content Include="../MarkDownParser\MarkDownParserTests\.gitignore" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\dotnet_library_license.txt" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\lib\net463\System.Text.RegularExpressions.dll" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\lib\netcore50\System.Text.RegularExpressions.dll" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\lib\netstandard1.6\System.Text.RegularExpressions.dll" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\net463\System.Text.RegularExpressions.dll" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netcore50\de\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netcore50\es\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netcore50\fr\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netcore50\it\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netcore50\ja\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netcore50\ko\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netcore50\ru\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netcore50\System.Text.RegularExpressions.dll" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netcore50\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netcore50\zh-hans\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netcore50\zh-hant\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netcoreapp1.1\System.Text.RegularExpressions.dll" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.0\de\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.0\es\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.0\fr\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.0\it\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.0\ja\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.0\ko\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.0\ru\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.0\System.Text.RegularExpressions.dll" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.0\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.0\zh-hans\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.0\zh-hant\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.3\de\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.3\es\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.3\fr\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.3\it\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.3\ja\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.3\ko\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.3\ru\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.3\System.Text.RegularExpressions.dll" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.3\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.3\zh-hans\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.3\zh-hant\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.6\de\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.6\es\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.6\fr\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.6\it\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.6\ja\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.6\ko\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.6\ru\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.6\System.Text.RegularExpressions.dll" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.6\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.6\zh-hans\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ref\netstandard1.6\zh-hant\System.Text.RegularExpressions.xml" />
+    <Content Include="../packages\System.Text.RegularExpressions.4.3.1\ThirdPartyNotices.txt" />
+    <Content Include="../packages\xunit.abstractions.2.0.3\lib\net35\xunit.abstractions.dll" />
+    <Content Include="../packages\xunit.abstractions.2.0.3\lib\net35\xunit.abstractions.xml" />
+    <Content Include="../packages\xunit.abstractions.2.0.3\lib\netstandard1.0\xunit.abstractions.dll" />
+    <Content Include="../packages\xunit.abstractions.2.0.3\lib\netstandard1.0\xunit.abstractions.xml" />
+    <Content Include="../packages\xunit.abstractions.2.0.3\lib\netstandard2.0\xunit.abstractions.dll" />
+    <Content Include="../packages\xunit.abstractions.2.0.3\lib\netstandard2.0\xunit.abstractions.xml" />
+    <Content Include="../packages\xunit.assert.2.4.1\lib\netstandard1.1\xunit.assert.dll" />
+    <Content Include="../packages\xunit.assert.2.4.1\lib\netstandard1.1\xunit.assert.xml" />
+    <Content Include="../packages\xunit.extensibility.core.2.4.1\lib\net452\xunit.core.dll" />
+    <Content Include="../packages\xunit.extensibility.core.2.4.1\lib\net452\xunit.core.xml" />
+    <Content Include="../packages\xunit.extensibility.core.2.4.1\lib\net452\xunit.runner.tdnet.dll" />
+    <Content Include="../packages\xunit.extensibility.core.2.4.1\lib\net452\xunit.runner.utility.net452.dll" />
+    <Content Include="../packages\xunit.extensibility.core.2.4.1\lib\netstandard1.1\xunit.core.dll" />
+    <Content Include="../packages\xunit.extensibility.core.2.4.1\lib\netstandard1.1\xunit.core.xml" />
+    <Content Include="../Server\.gitignore" />
+    <Content Include="../Server\httpserver.sln" />
+    <Content Include="../WorkWithFiles\.gitignore" />
+    <Content Include="../WorkWithFiles\WorkWithFiles.sln" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MarkDownParser\MarkDownParserMain\MarkDownParser.cs" />
-    <Compile Include="MarkDownParser\MarkDownParserTests\Tests.cs" />
-    <Compile Include="Server\httpserver.Main\Client.cs" />
-    <Compile Include="Server\httpserver.Main\Server.cs" />
-    <Compile Include="Server\httpserver.Tests\httpserver_Test.cs" />
-    <Compile Include="SetupDir\setupdir.cs" />
-    <Compile Include="WorkWithFiles\WorkWithFiles.Main\MoveFile.cs" />
-    <Compile Include="WorkWithFiles\WorkWithFiles.Main\ParseTo.cs" />
-    <Compile Include="WorkWithFiles\WorkWithFiles.Main\ReadDataFromFile.cs" />
-    <Compile Include="WorkWithFiles\WorkWithFiles.Main\SetupWorkingDirectory.cs" />
-    <Compile Include="WorkWithFiles\WorkWithFiles.Tests\MoveFile.Tests.cs" />
-    <Compile Include="WorkWithFiles\WorkWithFiles.Tests\ParseTo.Tests.cs" />
-    <Compile Include="WorkWithFiles\WorkWithFiles.Tests\ReadDataFromFileTests.cs" />
-    <Compile Include="WorkWithFiles\WorkWithFiles.Tests\SetupWorkingDirectory.Tests.cs" />
+    <Compile Include="../MarkDownParser\MarkDownParserMain\MarkDownParser.cs" />
+    <Compile Include="../MarkDownParser\MarkDownParserTests\Tests.cs" />
+    <Compile Include="../Server\httpserver.Main\Client.cs" />
+    <Compile Include="../Server\httpserver.Main\Server.cs" />
+    <Compile Include="../Server\httpserver.Tests\httpserver_Test.cs" />
+    <Compile Include="../SetupDir\setupdir.cs" />
+    <Compile Include="../WorkWithFiles\WorkWithFiles.Main\MoveFile.cs" />
+    <Compile Include="../WorkWithFiles\WorkWithFiles.Main\ParseTo.cs" />
+    <Compile Include="../WorkWithFiles\WorkWithFiles.Main\ReadDataFromFile.cs" />
+    <Compile Include="../WorkWithFiles\WorkWithFiles.Main\SetupWorkingDirectory.cs" />
+    <Compile Include="../WorkWithFiles\WorkWithFiles.Tests\MoveFile.Tests.cs" />
+    <Compile Include="../WorkWithFiles\WorkWithFiles.Tests\ParseTo.Tests.cs" />
+    <Compile Include="../WorkWithFiles\WorkWithFiles.Tests\ReadDataFromFileTests.cs" />
+    <Compile Include="../WorkWithFiles\WorkWithFiles.Tests\SetupWorkingDirectory.Tests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="MarkDownParser\MarkDownParserMain\MarkDownParserMain.csproj" />
-    <None Include="MarkDownParser\MarkDownParserTests\MarkDownParserTests.csproj" />
-    <None Include="packages\System.Text.RegularExpressions.4.3.1\.signature.p7s" />
-    <None Include="packages\System.Text.RegularExpressions.4.3.1\lib\MonoAndroid10\_._" />
-    <None Include="packages\System.Text.RegularExpressions.4.3.1\lib\MonoTouch10\_._" />
-    <None Include="packages\System.Text.RegularExpressions.4.3.1\lib\net45\_._" />
-    <None Include="packages\System.Text.RegularExpressions.4.3.1\lib\portable-net45+win8+wp8+wpa81\_._" />
-    <None Include="packages\System.Text.RegularExpressions.4.3.1\lib\win8\_._" />
-    <None Include="packages\System.Text.RegularExpressions.4.3.1\lib\wp80\_._" />
-    <None Include="packages\System.Text.RegularExpressions.4.3.1\lib\wpa81\_._" />
-    <None Include="packages\System.Text.RegularExpressions.4.3.1\lib\xamarinios10\_._" />
-    <None Include="packages\System.Text.RegularExpressions.4.3.1\lib\xamarinmac20\_._" />
-    <None Include="packages\System.Text.RegularExpressions.4.3.1\lib\xamarintvos10\_._" />
-    <None Include="packages\System.Text.RegularExpressions.4.3.1\lib\xamarinwatchos10\_._" />
-    <None Include="packages\System.Text.RegularExpressions.4.3.1\ref\MonoAndroid10\_._" />
-    <None Include="packages\System.Text.RegularExpressions.4.3.1\ref\MonoTouch10\_._" />
-    <None Include="packages\System.Text.RegularExpressions.4.3.1\ref\net45\_._" />
-    <None Include="packages\System.Text.RegularExpressions.4.3.1\ref\portable-net45+win8+wp8+wpa81\_._" />
-    <None Include="packages\System.Text.RegularExpressions.4.3.1\ref\win8\_._" />
-    <None Include="packages\System.Text.RegularExpressions.4.3.1\ref\wp80\_._" />
-    <None Include="packages\System.Text.RegularExpressions.4.3.1\ref\wpa81\_._" />
-    <None Include="packages\System.Text.RegularExpressions.4.3.1\ref\xamarinios10\_._" />
-    <None Include="packages\System.Text.RegularExpressions.4.3.1\ref\xamarinmac20\_._" />
-    <None Include="packages\System.Text.RegularExpressions.4.3.1\ref\xamarintvos10\_._" />
-    <None Include="packages\System.Text.RegularExpressions.4.3.1\ref\xamarinwatchos10\_._" />
-    <None Include="packages\System.Text.RegularExpressions.4.3.1\System.Text.RegularExpressions.4.3.1.nupkg" />
-    <None Include="packages\xunit.abstractions.2.0.3\.signature.p7s" />
-    <None Include="packages\xunit.abstractions.2.0.3\xunit.abstractions.2.0.3.nupkg" />
-    <None Include="packages\xunit.assert.2.4.1\.signature.p7s" />
-    <None Include="packages\xunit.assert.2.4.1\xunit.assert.2.4.1.nupkg" />
-    <None Include="packages\xunit.extensibility.core.2.4.1\.signature.p7s" />
-    <None Include="packages\xunit.extensibility.core.2.4.1\lib\net452\xunit.core.dll.tdnet" />
-    <None Include="packages\xunit.extensibility.core.2.4.1\xunit.extensibility.core.2.4.1.nupkg" />
-    <None Include="Server\httpserver.csproj" />
-    <None Include="WorkWithFiles\WorkWithFiles.csproj" />
+    <None Include="../MarkDownParser\MarkDownParserMain\MarkDownParserMain.csproj" />
+    <None Include="../MarkDownParser\MarkDownParserTests\MarkDownParserTests.csproj" />
+    <None Include="../packages\System.Text.RegularExpressions.4.3.1\.signature.p7s" />
+    <None Include="../packages\System.Text.RegularExpressions.4.3.1\lib\MonoAndroid10\_._" />
+    <None Include="../packages\System.Text.RegularExpressions.4.3.1\lib\MonoTouch10\_._" />
+    <None Include="../packages\System.Text.RegularExpressions.4.3.1\lib\net45\_._" />
+    <None Include="../packages\System.Text.RegularExpressions.4.3.1\lib\portable-net45+win8+wp8+wpa81\_._" />
+    <None Include="../packages\System.Text.RegularExpressions.4.3.1\lib\win8\_._" />
+    <None Include="../packages\System.Text.RegularExpressions.4.3.1\lib\wp80\_._" />
+    <None Include="../packages\System.Text.RegularExpressions.4.3.1\lib\wpa81\_._" />
+    <None Include="../packages\System.Text.RegularExpressions.4.3.1\lib\xamarinios10\_._" />
+    <None Include="../packages\System.Text.RegularExpressions.4.3.1\lib\xamarinmac20\_._" />
+    <None Include="../packages\System.Text.RegularExpressions.4.3.1\lib\xamarintvos10\_._" />
+    <None Include="../packages\System.Text.RegularExpressions.4.3.1\lib\xamarinwatchos10\_._" />
+    <None Include="../packages\System.Text.RegularExpressions.4.3.1\ref\MonoAndroid10\_._" />
+    <None Include="../packages\System.Text.RegularExpressions.4.3.1\ref\MonoTouch10\_._" />
+    <None Include="../packages\System.Text.RegularExpressions.4.3.1\ref\net45\_._" />
+    <None Include="../packages\System.Text.RegularExpressions.4.3.1\ref\portable-net45+win8+wp8+wpa81\_._" />
+    <None Include="../packages\System.Text.RegularExpressions.4.3.1\ref\win8\_._" />
+    <None Include="../packages\System.Text.RegularExpressions.4.3.1\ref\wp80\_._" />
+    <None Include="../packages\System.Text.RegularExpressions.4.3.1\ref\wpa81\_._" />
+    <None Include="../packages\System.Text.RegularExpressions.4.3.1\ref\xamarinios10\_._" />
+    <None Include="../packages\System.Text.RegularExpressions.4.3.1\ref\xamarinmac20\_._" />
+    <None Include="../packages\System.Text.RegularExpressions.4.3.1\ref\xamarintvos10\_._" />
+    <None Include="../packages\System.Text.RegularExpressions.4.3.1\ref\xamarinwatchos10\_._" />
+    <None Include="../packages\System.Text.RegularExpressions.4.3.1\System.Text.RegularExpressions.4.3.1.nupkg" />
+    <None Include="../packages\xunit.abstractions.2.0.3\.signature.p7s" />
+    <None Include="../packages\xunit.abstractions.2.0.3\xunit.abstractions.2.0.3.nupkg" />
+    <None Include="../packages\xunit.assert.2.4.1\.signature.p7s" />
+    <None Include="../packages\xunit.assert.2.4.1\xunit.assert.2.4.1.nupkg" />
+    <None Include="../packages\xunit.extensibility.core.2.4.1\.signature.p7s" />
+    <None Include="../packages\xunit.extensibility.core.2.4.1\lib\net452\xunit.core.dll.tdnet" />
+    <None Include="../packages\xunit.extensibility.core.2.4.1\xunit.extensibility.core.2.4.1.nupkg" />
+    <None Include="../Server\httpserver.csproj" />
+    <None Include="../WorkWithFiles\WorkWithFiles.csproj" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http, Version=4.1.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.4\lib\net46\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Net.Sockets, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Sockets.4.3.0\lib\net46\System.Net.Sockets.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.WebSockets, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.WebSockets.4.3.0\lib\net46\System.Net.WebSockets.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client, Version=4.0.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.WebSockets.Client.4.3.2\lib\net46\System.Net.WebSockets.Client.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Text.RegularExpressions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Text.RegularExpressions.4.3.1\lib\net463\System.Text.RegularExpressions.dll</HintPath>
       <Private>True</Private>

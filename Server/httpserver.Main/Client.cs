@@ -8,7 +8,7 @@ using System.IO;
 namespace httpserver
 {
     // Простенький клиент
-    class Client
+    public class Client
     {
         // Процедура, отображающая страницу с заданным кодом ошибки
         private void SendErrorToServer(TcpClient Client, int ErrorCode)

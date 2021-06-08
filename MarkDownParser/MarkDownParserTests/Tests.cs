@@ -1,6 +1,6 @@
 using System;
 using Xunit;
-using static MarkDownParser.MarkDownParser;
+using static MarkDownParser.mdParser;
 
 namespace MarkDownParserTests
 {
@@ -8,7 +8,7 @@ namespace MarkDownParserTests
     {
         public string parse(string markdown)
         {
-            string result = MarkDownParser.MarkDownParser.parse(markdown, "abc");
+            string result = MarkDownParser.mdParser.parse(markdown, "abc");
             result = result.Replace("<head><title>abc</title></head>", "");
             return result;
         }
@@ -16,7 +16,7 @@ namespace MarkDownParserTests
         [Fact]
         public void HeaderTest()
         {
-            string result = MarkDownParser.MarkDownParser.parse("", "abcd");
+            string result = MarkDownParser.mdParser.parse("", "abcd");
             Assert.Equal("<html><head><title>abcd</title></head><body></body></html>", result);
         }
 

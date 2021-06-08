@@ -17,6 +17,6 @@ jobs:
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
       - name: Install dependencies
-        run: dotnet restore ./pagegen/
+        run: dotnet restore ./
       - name: Build
-        run: dotnet build --configuration Release --no-restore ./pagegen/
+        run: dotnet build --configuration Release --no-restore ./

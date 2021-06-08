@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="MarkDownParser\MarkDownParserTests\**" />
+    <Compile Remove="Server\httpserver.Tests\**" />
+    <Compile Remove="WorkWithFiles\WorkWithFiles.Tests\**" />
+    <EmbeddedResource Remove="MarkDownParser\MarkDownParserTests\**" />
+    <EmbeddedResource Remove="Server\httpserver.Tests\**" />
+    <EmbeddedResource Remove="WorkWithFiles\WorkWithFiles.Tests\**" />
+    <None Remove="MarkDownParser\MarkDownParserTests\**" />
+    <None Remove="Server\httpserver.Tests\**" />
+    <None Remove="WorkWithFiles\WorkWithFiles.Tests\**" />
+  </ItemGroup>
+
+</Project>

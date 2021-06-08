@@ -1,5 +1,4 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using System.Linq;
 
 namespace _mFile
@@ -32,7 +31,6 @@ namespace _mFile
                 File.Create(_configFileName);
                 Directory.CreateDirectory(_pagesDirName);
                 Directory.CreateDirectory(_appDirName);
-                //здесь можно провести дополнительную конфигураци
             }
             return new DirectoryInfo(_currentDirectory);
         }

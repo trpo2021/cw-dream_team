@@ -1,9 +1,9 @@
-﻿using System;
+﻿using System; 
 using System.Text.RegularExpressions;
 
 namespace MarkDownParser
 {
-    public class MarkDownParser
+    public class mdParser
     {
         public static String parse(String markDownText, string siteName)
         {

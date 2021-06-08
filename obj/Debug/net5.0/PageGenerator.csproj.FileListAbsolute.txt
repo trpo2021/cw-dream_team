@@ -1,0 +1,16 @@
+C:\Users\USer\Desktop\Курсач ТРПО\cw-dream_team\bin\Debug\net5.0\PageGenerator.exe
+C:\Users\USer\Desktop\Курсач ТРПО\cw-dream_team\bin\Debug\net5.0\PageGenerator.deps.json
+C:\Users\USer\Desktop\Курсач ТРПО\cw-dream_team\bin\Debug\net5.0\PageGenerator.runtimeconfig.json
+C:\Users\USer\Desktop\Курсач ТРПО\cw-dream_team\bin\Debug\net5.0\PageGenerator.runtimeconfig.dev.json
+C:\Users\USer\Desktop\Курсач ТРПО\cw-dream_team\bin\Debug\net5.0\PageGenerator.dll
+C:\Users\USer\Desktop\Курсач ТРПО\cw-dream_team\bin\Debug\net5.0\ref\PageGenerator.dll
+C:\Users\USer\Desktop\Курсач ТРПО\cw-dream_team\bin\Debug\net5.0\PageGenerator.pdb
+C:\Users\USer\Desktop\Курсач ТРПО\cw-dream_team\obj\Debug\net5.0\PageGenerator.csprojAssemblyReference.cache
+C:\Users\USer\Desktop\Курсач ТРПО\cw-dream_team\obj\Debug\net5.0\PageGenerator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USer\Desktop\Курсач ТРПО\cw-dream_team\obj\Debug\net5.0\PageGenerator.AssemblyInfoInputs.cache
+C:\Users\USer\Desktop\Курсач ТРПО\cw-dream_team\obj\Debug\net5.0\PageGenerator.AssemblyInfo.cs
+C:\Users\USer\Desktop\Курсач ТРПО\cw-dream_team\obj\Debug\net5.0\PageGenerator.csproj.CoreCompileInputs.cache
+C:\Users\USer\Desktop\Курсач ТРПО\cw-dream_team\obj\Debug\net5.0\PageGenerator.dll
+C:\Users\USer\Desktop\Курсач ТРПО\cw-dream_team\obj\Debug\net5.0\ref\PageGenerator.dll
+C:\Users\USer\Desktop\Курсач ТРПО\cw-dream_team\obj\Debug\net5.0\PageGenerator.pdb
+C:\Users\USer\Desktop\Курсач ТРПО\cw-dream_team\obj\Debug\net5.0\PageGenerator.genruntimeconfig.cache

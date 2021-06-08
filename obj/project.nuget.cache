@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1/T3wZIk1ZYS/mXBLF426fJzZzOebVaO1KTe9I644INmQ7QlwJeK4uJBygd2XyV3ytCCtxZmJtNjpvVANmTASg==",
+  "dgSpecHash": "0lI9yr8BNuf0QGH5WWevqWBQ5dqAMn4FGa7p13SLHamHUtfW6W+SK2suP8WOR6UoZinI4hSsnr3kPdnZkW0lVA==",
   "success": true,
   "projectFilePath": "C:\\Users\\USer\\Desktop\\Курсач ТРПО\\cw-dream_team\\PageGenerator.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\USer\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.15\\microsoft.netcore.app.host.win-x64.3.1.15.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "1/T3wZIk1ZYS/mXBLF426fJzZzOebVaO1KTe9I644INmQ7QlwJeK4uJBygd2XyV3ytCCtxZmJtNjpvVANmTASg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\USer\\Desktop\\Курсач ТРПО\\cw-dream_team\\PageGenerator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USer\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.15\\microsoft.netcore.app.host.win-x64.3.1.15.nupkg.sha512"
+  ],
+  "logs": []
+}
